@@ -255,13 +255,7 @@ body {
   outline: 0;
 }
 
-/* Media queries */
 
-@media (min-width: 768px) {
-  #download {
-    padding: 0 40px;
-  }
-}
 
 #save-button {
   /* margin-left: 20px; */
@@ -316,10 +310,35 @@ body {
   outline: 0;
 }
 
+
 /* Media queries */
+
+@media (min-width: 768px) {
+  #download {
+    padding: 0 40px;
+  }
+}
+
 
 @media (min-width: 768px) {
   #save-button {
     padding: 0 40px;
+  }
+}
+
+@media print {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    page-break-after: always; 
+  }
+  @page {
+    size: 8.5in 11in; 
+    margin: 0;
   }
 }
