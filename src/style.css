@@ -100,7 +100,7 @@ body {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.sliced-lvl-title {
+.sliced-lvl-title, .sliced-lvl-title2 {
   width: 30px;
   height: 8px;
   margin-right: 5px;
@@ -112,6 +112,20 @@ body {
 
 .sliced-lvl-title:nth-child(n + 5) {
   background-color: white;
+}
+
+.sliced-lvl-title2:nth-child(-n + 2) {
+  background-color: #394d6b;
+}
+
+.sliced-lvl-title2:nth-child(n + 3) {
+  background-color: white;
+}
+
+.single-column2 { 
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
 .single-column {
